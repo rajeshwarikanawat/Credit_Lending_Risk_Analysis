@@ -19,7 +19,7 @@ with open("model.pkl", "rb") as f:
 
 @st.cache  # 👈 Magic performance booster
 def load_model():
-    return joblib.load("models\classifier.pkl")  # Expensive operation
+    return joblib.load("..\models\classifier.pkl")  # Expensive operation
 
 # Set page configuration
 st.set_page_config(
