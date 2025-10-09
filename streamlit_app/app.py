@@ -3,11 +3,23 @@ import pandas as pd
 import joblib
 import numpy as np
 import base64
+import pickle
+import requests
+
+url = "https://github.com/rajeshwarikanawat/Credit_Lending_Risk_Analysis/raw/main/model.pkl"
+response = requests.get(url)
+
+with open("model.pkl", "wb") as f:
+    f.write(response.content)
+
+with open("model.pkl", "rb") as f:
+    model = pickle.load(f)
+
 
 
 @st.cache  # 👈 Magic performance booster
 def load_model():
-    return joblib.load("..\models\classifier.pkl")  # Expensive operation
+    return joblib.load("models\classifier.pkl")  # Expensive operation
 
 # Set page configuration
 st.set_page_config(
