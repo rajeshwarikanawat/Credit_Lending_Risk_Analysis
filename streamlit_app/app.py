@@ -6,20 +6,20 @@ import base64
 import pickle
 import requests
 
-url = "https://github.com/rajeshwarikanawat/Credit_Lending_Risk_Analysis/blob/main/streamlit_app/model.pkls"
+url = "https://raw.githubusercontent.com/rajeshwarikanawat/Credit_Lending_Risk_Analysis/main/models/classifier.pkl"
 response = requests.get(url)
 
-with open("model.pkl", "wb") as f:
+with open("classifier.pkl", "wb") as f:
     f.write(response.content)
 
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
+model = joblib.load("classifier.pkl")
 
 
 
-@st.cache  # 👈 Magic performance booster
+
+@st.cache_resource
 def load_model():
-    return joblib.load(r"../models/classifier.pkl") # Expensive operation
+    return joblib.load(r"../models/classifier.pkl")
 
 # Set page configuration
 st.set_page_config(
