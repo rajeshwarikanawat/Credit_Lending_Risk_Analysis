@@ -190,10 +190,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**👤 Author**: [Rajeshwari Kanawat](https://github.com/rajeshwarikanawat)  
-**🔗 Repository**: [Credit_Lending_Risk_Analysis](https://github.com/rajeshwarikanawat/Credit_Lending_Risk_Analysis)  
-**🐛 Issue Tracking**: [Report Issues](https://github.com/rajeshwarikanawat/Credit_Lending_Risk_Analysis/issues)  
-
+**👤 Author**: [Saksham Tapadia](https://github.com/SakshamTapadia)  
+**🔗 Repository**: [Credit_Lending_Risk_Analysis](https://github.com/SakshamTapadia/Credit_Lending_Risk_Analysis)  
+**🐛 Issue Tracking**: [Report Issues](https://github.com/SakshamTapadia/Credit_Lending_Risk_Analysis/issues)  
+**💡 Feature Requests**: [Suggest Features](https://github.com/SakshamTapadia/Credit_Lending_Risk_Analysis/discussions)
 
 ---
 
